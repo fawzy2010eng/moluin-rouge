@@ -1,4 +1,2 @@
-simple resume template 
-used techs:
-html5,css3,js,owl carousel,aos animation,sass
-https://technext.github.io/resume-2/index.html#
+this's a movie website which fetch data from imdb api, and display it.
+it only show a few number randomly due to requests limit, and also the top moives according to imdb rating, the most popular movies  

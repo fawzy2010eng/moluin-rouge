@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.tiles.min.css">
+
+
+    <!--owl carousel-->
+    <link href="css/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.css">
+    <!--aos scroll library-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- animate.css -->
+    <link rel='stylesheet' href="css/animate.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Moluin Rouge</title>
+</head>
+
+<body>
+
+
+    <div class="header">
+
+
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <div class="navbar-brand"><img src="images/m.png" alt="">
+                    <h4>MOLUIN <br>ROUGE</h4>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                MOVIES
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item topMovies" href="#">TOP MOVIES</a>
+                                <a class="dropdown-item popMovies" href="#">MOST POPULAR MOVIES</a>
+                                <a class="dropdown-item comingMovies" href="#">COMING SOON</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                SHOWS
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item topShows" href="#">TOP SHOWS</a>
+                                <a class="dropdown-item popShows" href="#">MOST POPULAR SHOWS</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                NEWS
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item boxoffice" href="#">BOX OFFICE</a>
+                                <a class="dropdown-item topnews" href="#">TOP NEWS</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            HELP
+                        </li>
+                        <li>
+                            LOG IN
+                        </li>
+                        <button class="btn">
+                            SIGN UP
+                        </button>
+
+                    </ul>
+
+                </div>
+
+            </div>
+        </nav>
+
+
+
+
+
+
+
+
+    </div>
+    <div class="searchBar">
+        <div class="container">
+
+            <div class="txt">
+                <input id="searchBox" type="text" placeholder="Search For Movies ,Shows And Celeberities">
+                <i class="fas fa-search ml-1"></i>
+                <div id="result"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="other">
+        <div class="banner">
+            <div class="container">
+                <div class="social">
+                    <h3>OUR RECOMMENDATIONS</h3>
+                    <div class="sub">
+                        <h4>FOLLOW US:</h4>
+                        <div class="items">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-google-plus-g"></i>
+                            <i class="fab fa-youtube"></i>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="owl-carousel owl-theme owl-loaded">
+                    <div class="owl-stage-outer">
+                        <div class="owl-stage">
+                            <!-- <div class="owl-item">
+                                <img src="images/poster1.jpg" alt="">
+                                <div class="txt">
+                                    <div class="gener">FANTASY</div>
+                                    <h4>AVANGERS</h4>
+                                    <div class="rate">
+                                        <i class="fas fa-star"></i>
+                                        7.4/10
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="owl-item">
+                                <img src="images/poster1.jpg" alt="">
+                                <div class="txt">
+                                    <div class="gener">FANTASY</div>
+                                    <h4>AVANGERS</h4>
+                                    <div class="rate">
+                                        <i class="fas fa-star"></i>
+                                        7.4/10
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="owl-item">
+                                <img src="images/poster1.jpg" alt="">
+                                <div class="txt">
+                                    <div class="gener">FANTASY</div>
+                                    <h4>AVANGERS</h4>
+                                    <div class="rate">
+                                        <i class="fas fa-star"></i>
+                                        7.4/10
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="owl-item">
+                                <img src="images/poster2.jpg" alt="">
+                                <div class="txt">
+                                    <div class="gener">FANTASY</div>
+                                    <h4>AVANGERS</h4>
+                                    <div class="rate">
+                                        <i class="fas fa-star"></i>
+                                        7.4/10
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <img src="images/poster3.jpg" alt="">
+                                <div class="txt">
+                                    <div class="gener">FANTASY</div>
+                                    <h4>AVANGERS</h4>
+                                    <div class="rate">
+                                        <i class="fas fa-star"></i>
+                                        7.4/10
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <img src="images/poster4.jpg" alt="">
+                                <div class="txt">
+                                    <div class="gener">FANTASY</div>
+                                    <h4>AVANGERS</h4>
+                                    <div class="rate">
+                                        <i class="fas fa-star"></i>
+                                        7.4/10
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="tops">
+            <div class="container">
+                <div class="left">
+                    <div class="movies">
+                        <h4>COMING SOON</h4>
+                        <div class="classification">
+                            <!-- <h6>#POPULAR</h6>
+                            <h6>#COOMING SOON</h6>
+                            <h6>#TOP RATED</h6>
+                            <h6>#MOST REVIEWED</h6> -->
+                        </div>
+                        <div class="owl-carousel owl-theme owl-loaded">
+                            <div class="owl-stage-outer">
+                                <div class="owl-stage">
+                                    <!-- <div class="owl-item">
+                                        <img src="images/poster1.jpg" alt="">
+                                        <div class="txt">
+                                            <h4>AVANGERS</h4>
+                                            <div class="rate">
+                                                <i class="fas fa-star"></i>
+                                                7.4/10
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="owl-item">
+                                        <img src="images/poster2.jpg" alt="">
+                                        <div class="txt">
+                                            <h4>AVANGERS</h4>
+                                            <div class="rate">
+                                                <i class="fas fa-star"></i>
+                                                7.4/10
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item">
+                                        <img src="images/poster3.jpg" alt="">
+                                        <div class="txt">
+                                            <h4>AVANGERS</h4>
+                                            <div class="rate">
+                                                <i class="fas fa-star"></i>
+                                                7.4/10
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item">
+                                        <img src="images/poster4.jpg" alt="">
+                                        <div class="txt">
+                                            <h4>AVANGERS</h4>
+                                            <div class="rate">
+                                                <i class="fas fa-star"></i>
+                                                7.4/10
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="shows">
+                        <h4>MOST POPULAR SHOWS</h4>
+                        <div class="classification">
+                            <!-- <h6>#POPULAR</h6>
+                            <h6>#COOMING SOON</h6>
+                            <h6>#TOP RATED</h6>
+                            <h6>#MOST REVIEWED</h6> -->
+                        </div>
+                        <div class="owl-carousel owl-theme owl-loaded">
+                            <div class="owl-stage-outer">
+                                <div class="owl-stage">
+                                    <!-- <div class="owl-item">
+                                        <img src="images/poster1.jpg" alt="">
+                                        <div class="txt">
+                                            <h4>AVANGERS</h4>
+                                            <div class="rate">
+                                                <i class="fas fa-star"></i>
+                                                7.4/10
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="owl-item">
+                                        <img src="images/poster2.jpg" alt="">
+                                        <div class="txt">
+                                            <h4>AVANGERS</h4>
+                                            <div class="rate">
+                                                <i class="fas fa-star"></i>
+                                                7.4/10
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item">
+                                        <img src="images/poster3.jpg" alt="">
+                                        <div class="txt">
+                                            <h4>AVANGERS</h4>
+                                            <div class="rate">
+                                                <i class="fas fa-star"></i>
+                                                7.4/10
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item">
+                                        <img src="images/poster4.jpg" alt="">
+                                        <div class="txt">
+                                            <h4>AVANGERS</h4>
+                                            <div class="rate">
+                                                <i class="fas fa-star"></i>
+                                                7.4/10
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ads">
+                    <img src="images/ads1.png" alt="">
+                    <h5>CELEBRITIES BORN TODAY</h5>
+                    <div class="celeberities">
+                        <!-- <div class="cele">
+                            <img src="images/celeb1.jpg" alt="">
+                            <div class="txt">
+                                <h6>Sameul L Jackson</h6>
+                                <h5>ACTOR</h5>
+                            </div>
+                        </div>
+                        <div class="cele">
+                            <img src="images/celeb1.jpg" alt="">
+                            <div class="txt">
+                                <h6>Sameul L Jackson</h6>
+                                <h5>ACTOR</h5>
+                            </div>
+                        </div>
+                        <div class="cele">
+                            <img src="images/celeb1.jpg" alt="">
+                            <div class="txt">
+                                <h6>Sameul L Jackson</h6>
+                                <h5>ACTOR</h5>
+                            </div>
+                        </div>
+                        <div class="cele">
+                            <img src="images/celeb1.jpg" alt="">
+                            <div class="txt">
+                                <h6>Sameul L Jackson</h6>
+                                <h5>ACTOR</h5>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="videos">
+            <!-- <h4>IN THEATER</h4> -->
+            <div class="container">
+                <div class="left">
+                    <iframe title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+
+                </div>
+                <div class="options">
+
+                    <!-- <div class="owl-item" data-url="${res.items[rand[i]].id}" onClick="updateIframe()">
+                        <img src='images/poster1.jpg'>
+                        <div class="txt">
+                            <h4>the godfather</h4>
+                        </div>
+                    </div>
+                    <div class="owl-item" data-url="${res.items[rand[i]].id}" onClick="updateIframe()">
+                        <img src='images/poster1.jpg'>
+                        <div class="txt">
+                            <h4>the godfather</h4>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+
+        <div class="news">
+            <div class="container">
+                <h3>LATEST NEWS</h3>
+                <!-- <div class="main">
+                    <img src="images/poster1.jpg" alt="">
+                    <div class="txt">
+                        <a href="http: //www.codecademy.com/">
+                            <h4>Brie Larson to play first female white house candidate
+                                Victoria Woodull in Amazon film</h4>
+                        </a>
+                        <h5>13 hours ago</h5>
+                        <h6>Exclusive: Amazon Studios has acquired Victoria Woodhull, with Oscar winning Room star Brie
+                            Larson polsed to produce, and play the first female candidate for the presidency of the
+                            United
+                            States. Amazon bought it in a pitch package deal. Ben Kopit, who wrote the Warner Bros film
+                            Libertine that has...</h6>
+                    </div>
+                </div>
+                <div class="latest">
+                    <h4>More News On Moluin Rouge</h4>
+                    <div class="txt">
+                        <div>
+                            <h5>Michael Shannon Frontrunner to play Cable in “Deadpool 2”</h5>
+                            <h6>13 hours ago</h6>
+                        </div>
+                        <div>
+                            <h5>Michael Shannon Frontrunner to play Cable in “Deadpool 2”</h5>
+                            <h6>13 hours ago</h6>
+                        </div>
+                        <div>
+                            <h5>Michael Shannon Frontrunner to play Cable in “Deadpool 2”</h5>
+                            <h6>13 hours ago</h6>
+                        </div>
+                        <div>
+                            <h5>Michael Shannon Frontrunner to play Cable in “Deadpool 2”</h5>
+                            <h6>13 hours ago</h6>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <div class="unit">
+                    <div class="logo"><img src="images/m.png" alt="">
+                        <h4>MOLUIN <br>ROUGE</h4>
+                    </div>
+                    <h5>5th Avenue st, manhattan New York, NY 10001</h5>
+                    <p class="num">
+                        call us:
+                        <a>(+01) 202 342 6789</a>
+                    </p>
+
+                </div>
+                <div class="unit">
+                    <h4>Resources</h4>
+                    <h5>About</h5>
+                    <h5>MOLUIN ROUGE</h5>
+                    <h5>Contact Us</h5>
+                    <h5>Forums</h5>
+                    <h5>Blog</h5>
+                    <h5>Help Center</h5>
+                </div>
+
+                <div class="unit">
+                    <h4>Legal</h4>
+                    <h5>Terms of Use</h5>
+                    <h5>Privacy Policy</h5>
+                    <h5>Security</h5>
+                </div>
+
+                <div class="unit">
+                    <h4>Account</h4>
+                    <h5>My Account</h5>
+                    <h5>Watchlist</h5>
+                    <h5>Collections</h5>
+                    <h5>User Guide</h5>
+                </div>
+
+                <div class="unit">
+                    <h4>Newsletter</h4>
+                    <h5>Subscribe to our newsletter system now to get latest news from us.</h5>
+                    <input type="email" name="" id="" placeholder="Enter your email">
+                    <h6>SUBSCRIBE NOW </h6>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+
+    </div>
+
+    <!-- jquery -->
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--owl carousel-->
+    <script src="js/owl.carousel.min.js"></script>
+    <!--type writer-->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js">
+    </script>
+    <!--aos scroll library-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <!-- script js -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>

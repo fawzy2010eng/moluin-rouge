@@ -18,7 +18,9 @@ $('.owl-carousel').owlCarousel({
 
 const KeyApi = 'k_mcwk6il6';
 
+
 // const KeyApi = 'k_1ys8ouur';
+
 var $input = document.getElementById('searchBox');
 var baseUrl = "http://sg.media-imdb.com/suggests/";
 var $result = document.getElementById('result');
@@ -133,6 +135,7 @@ function getElapsedTime(time) {
     return (Math.floor((now.getTime() - Date.parse(time)) / (60 * 60 * 1000)))
 }
 
+
 function getRandomTopMovies() {
     var url = `https://imdb-api.com/en/API/Top250Movies/${KeyApi}`;
     fetch(url)
@@ -145,29 +148,30 @@ function getRandomTopMovies() {
             let randitems = [];
             for (let i = 0; i < 4; i++) {
                 item = res.items[rand[i]];
+                // console.log(item);
                 document.querySelector('.banner .owl-stage').innerHTML +=
                     `
-                    <div class="owl-item">
-                        <img src= ${item.image} alt="">
-                        <div class="txt">
-                            <h4>${item.title}</h4>
-                            <div class="rate">
-                                <i class="fas fa-star"></i>
-                                ${item.imDbRating}/10
+                        <div class="owl-item">
+                            <img src= ${item.image} alt="">
+                            <div class="txt">
+                                <h4>${item.title}</h4>
+                                <div class="rate">
+                                    <i class="fas fa-star"></i>
+                                    ${item.imDbRating}/10
+                                </div>
                             </div>
-                        </div>
-                    </div>      
-                `
+                        </div>      
+                    `
                 randitems.push(res.items[rand[i]].id);
                 document.querySelector('.videos .options').innerHTML +=
                     `
-                    <div class="owl-item" data-url = ${item.id}>
-                        <img src=${item.image}>
-                        <div class="txt">
-                            <h4>${item.title}</h4>
-                        </div>
-                    </div>     
-                `
+                        <div class="owl-item" data-url = ${item.id}>
+                            <img src=${item.image}>
+                            <div class="txt">
+                                <h4>${item.title}</h4>
+                            </div>
+                        </div>     
+                    `
 
 
             }
@@ -198,11 +202,14 @@ function getRandomTopMovies() {
                 })
             })
         })
+
         .catch(err => console.log(err))
 
 
 }
+
 // tt0910970
+
 function getComingSoon() {
     var url = `https://imdb-api.com/en/API/ComingSoon/${KeyApi}`;
     fetch(url)
@@ -370,6 +377,13 @@ function getCelebrities() {
         });
 
 }
+
+
+
+
+
+
+
 
 
 getRandomTopMovies();
